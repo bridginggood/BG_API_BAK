@@ -14,6 +14,11 @@
 #
 
 class Business < ActiveRecord::Base
+	reverse_geocoded_by :latitude, :longitude
+	after_validation :reverse_geocode
+	geocoded_by :address
+	after_validation :geocode
+
 	attr_accessible(:bid, :name, :address, :latitude, :longitude, :cid);
 
 	validates(:name, :presence => true);

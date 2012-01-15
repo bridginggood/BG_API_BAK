@@ -8,6 +8,8 @@ gem 'rails', '3.1.3'
 gem 'mysql2'
 gem 'therubyracer'
 gem 'geocoder'
+gem 'factory_girl' # used to pass Geocoder
+#gem 'factory_girl_rails' # used to pass Geocoder
 
 
 # Gems used only for assets and not required
