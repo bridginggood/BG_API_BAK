@@ -1,4 +1,7 @@
 Api::Application.routes.draw do
+	root :to => "Home#index"
+  get "home/index"
+
   get "business/index"
 
   get "business/create"
